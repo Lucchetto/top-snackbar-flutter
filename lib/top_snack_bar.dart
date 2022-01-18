@@ -62,6 +62,10 @@ void showTopSnackBar(
   _previousEntry = overlayEntry;
 }
 
+void dismissPreviousTopSnackBar() {
+  animationController.reverse();
+}
+
 /// Widget that controls all animations
 class TopSnackBar extends StatefulWidget {
   final Widget child;
